@@ -138,3 +138,31 @@ footer {
     font-size: 0.9rem;
     opacity: 0.7;
 }
+
+/*Style pour les écrans plus petits*/
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .services, .Temoignages {
+        padding: 50px 15px;
+    }
+
+    .services li {
+        font-size: 1rem;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .commentaires {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sous-commentaire {
+        max-width: 100%;
+    }
+}
