@@ -1,17 +1,18 @@
-/*Style global*/
+/* --- Style Global --- */
 body {
-    font-family:'Arial', sans-serif;
-    margin:0;
-    text-align:center;
-    color:#333
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    background-color: #ffffff; 
 }
 
-
-/*Style pour le header*/
+/* --- Header --- */
 header {
-    background-color: #04070a;
-    color: white;
-    padding: 20px;
+    background-color: #f8f9fa; 
+    color: #1a1a1a;
+    padding: 30px 20px;
+    border-bottom: 1px solid #eee;
 }
 
 .btn-cta {
@@ -26,16 +27,11 @@ header {
     transition: 0.3s;
 }
 
-.btn-cta:hover {
-    background-color: #a68549;
-}
+/* --- Section A-Propos --- */
 .a-propos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url('landing_picture.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    padding: 80px 10%;
+    background-color: #ffffff; 
+    color: #333;
+    padding: 60px 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,33 +39,13 @@ header {
     flex-wrap: wrap;
 }
 
-.a-propos ul {
-    flex: 2;
-    list-style: none;
-    padding: 0;
-    margin: 30px auto;
-    max-width: 600px;
-}
-
-.a-propos li {
-    padding: 15px;
-    text-align: left;
-    font-size: 1.2rem;
-}
-
-.pict-cont {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
 .pict-bio {
     width: 100%;
-    max-width: 450%;
+    max-width: 400px;
     height: auto;
-    display: block;
-    border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transform: translateY(-50px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
 }
 
 .bio-cont {
@@ -78,69 +54,47 @@ header {
 }
 
 .bio-title {
-    font-style: sans-serif;
-    color: #c5a059;
-    font-size: 2.8rem;
+    color: #1a1a1a;
+    font-size: 2.2rem;
     margin-bottom: 20px;
-    line-height: 1.1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transform: translateY(-70px);
-    transform: translateX(-10px);
-}
-
-.title-content {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-}
-
-.bio-title .highlight {
-    font-style: sans-serif;
-    color: #c5a059;
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-    align-self: center;
-    display: block;
-    width: fit-content;
-    padding-top: 5px;
-    transform: translateY(-40px);
+    transform: translateY(140px);
 }
 
 .bio-title span {
-    display: block; 
-    white-space: nowrap;
+    display: block;
+}
+
+.highlight {
+    color: #1a1a1a;
+    font-size: 2.8rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    transform: translateY(-60px);
 }
 
 .bio-intro {
-    font-style: sans-serif;
     font-size: 1.1rem;
-    line-height: 1.8;
-    color: white;
-    text-align: left;
+    line-height: 1.7;
+    color: #555; 
     transform: translateY(-70px);
 }
 
-.bio-cont .bio-cta  {
-    margin-top: 30px;
-}
-
+/* --- Prestations --- */
 .prest {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-    flex-wrap: wrap; 
-    grid-column: 1 / -1;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .prest-title {
     width: 100%;
     text-align: center;
-    color: #c5a059;
+    color: #1a1a1a;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -148,7 +102,7 @@ header {
 .prest-item {
     margin: 0;
     text-align: center;
-    width: 280px; 
+    width: 280px;
 }
 
 .prest-item img {
@@ -157,217 +111,83 @@ header {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #c5a059;
-    transition: 0.3s;
-}
-
-.prest-item img:hover {
-    transform: translateY(-5px); 
 }
 
 .prest-item figcaption {
     margin-top: 15px;
     font-weight: bold;
-    color: #c5a059; 
-    font-size: 1.1rem;
-    text-transform: uppercase; 
+    color: #c5a059;
+    text-transform: uppercase;
 }
 
 
-/*Style pour la section des services*/
+/* --- Section Services --- */
 .services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url('landing_picture.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
+    background-color: #fcf8f0;
     padding: 80px 10%;
+    color: #333;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
-    margin: 30px auto;
-    max-width: 600px;
-}
-
-.services li{
-    background: rgb(5, 5, 2);
+.services li {
+    background: white;
     margin-bottom: 12px;
     padding: 15px;
     border-left: 5px solid #c5a059;
     text-align: left;
-    border-radius: 4px;
-    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/*Style pour le formulaire de contact*/
+/* --- Formulaire --- */
 form {
     display: flex;
     flex-direction: column;
-    max-width:300px;
-    margin: 20px auto;
+    max-width: 400px;
+    margin: 40px auto;
 }
 
 input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    text-align: center;
 }
 
-button {
-    padding: 10px;
-    background-color: #c5a059;
-    color : white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/*Style pour les Temoignages et les commentaires*/
+/* --- Témoignages --- */
 .Temoignages {
-    background-color: #04070a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+    background-color: #ffffff;
     padding: 60px 20px;
-    gap: 30px;
-
-}
-
-.preuves {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .card {
     padding: 20px;
-    border: 1px solid #c5a059;
+    border: 2px solid #c5a059;
+    color: #1a1a1a;
+    font-weight: bold;
     border-radius: 8px;
-    min-width: 200px;
-}
-
-.commentaires {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
 }
 
 .sous-commentaire {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #c5a059;
-    max-width: 300px;
-    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #eee;
+    color: #333;
 }
 
-.sous-commentaire p {
-    font-style: italic;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.sous-commentaire span {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-    font-style: normal;
-    color: #c5a059;
-}
-
-/* Style pour le bas de la page */
+/* --- Footer --- */
 footer {
-    background-color: #04070a;
+    background-color: #1a1a1a;
     color: white;
     padding: 40px 10%;
-    border-top: 2px solid #ccc;
 }
 
-.footer-content p {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-
-.copyright {
-    font-size: 0.9rem;
-    opacity: 0.7;
-}
-
-/*Style pour les écrans plus petits*/
+/* --- Responsive Mobile --- */
 @media (max-width: 768px) {
-    footer {
-        padding: 40px 20px;
-    }
-
     .a-propos {
-        flex-direction: column; 
-        padding: 50px 20px;
-        text-align: center;
-    }
-    
-    .a-propos li {
-        text-align: center; 
-    }
-
-
-    .pict-bio {
-        max-width: 100%;
-        height: 300px;
-    }
-
-    .bio-cont {
-        padding: 0 15px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .bio-intro {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .bio-title {
-        line-height: 1.3; 
-        font-size: 1.8rem;  
-        display: block;   
-        text-align: center;
-        transform: translateX(-10px);
-    }
-
-    .bio-title span {
-        display: block;
-    }
-
-    .bio-title .highlight {
-        margin-top: 5px;
-        align-self: center;
-        font-size: 2rem; 
-    }
-
-    .services, .Temoignages {
-        padding: 50px 15px;
-    }
-
-    .services li {
-        font-size: 1rem;
-    }
-
-    form {
-        max-width: 90%;
-    }
-
-    .commentaires {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-
-    .sous-commentaire {
-        max-width: 100%;
+    .bio-title, .highlight {
+        text-align: center;
+        font-size: 1.8rem;
     }
 }
