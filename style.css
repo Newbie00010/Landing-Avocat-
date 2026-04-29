@@ -327,6 +327,7 @@ footer {
         font-size: 2rem;  
         display: block;   
         text-align: center;
+        transform: translateX(-10px);
     }
 
     .bio-title .highlight {
